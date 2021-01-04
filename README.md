@@ -69,3 +69,25 @@ these as input and output parameters of a video transcoding application, ffmpeg 
 
 the second dataset can be used to build a transcoding time prediction
 model and show the significance of our datasets.
+
+# Visualisation
+
+-----------------------------------------------------------------------------------------------------
+
+# Modèles
+
+-----------------------------------------------------------------------------------------------------
+
+## Random forest
+
+Temps d'éxucution moyen et une très bonne performance. Ce modèle est favorable pour un nombre d'éstimateurs réduit car il devient très lent lorsque le nombre d'estimateurs dépasse 150. C'est donc un bon modèle.
+
+## GridSearch avec random forest
+
+Temps d'éxécution énorme et valeur de performances intéréssantes
+
+## KNN
+
+Temps d'éxécution rapide mais l'erreur est assez haute et la performance assez haute. 
+
+##
