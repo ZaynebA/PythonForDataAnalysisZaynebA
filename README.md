@@ -87,9 +87,14 @@ Notre problème est un problème de regression car la target à prédire n'a pas
 #### GridSearch avec Random Forest
 #### KNN
 #### XGBOOST
-Nous choisissons Mean_square_error(MSE) ainsi que l'accuracy R² comme évaluateur pour tous nos modèles. Un MSE parfait vaut 0 et un R² parfait vaut 1
+
+Nous choisissons Mean_square_error(MSE) ainsi que l'accuracy R² comme évaluateur pour tous nos modèles. Un MSE parfait vaut 0 et un R² parfait vaut 1.
+
 -----------------------------------------------------------------------------------------------------
 
+## Regression Linéaire
+
+Nous choisissons d'appliquer dans un premier temps un modèle simple de régression, la regression linéaire. 
 ## Random forest
 
 Nous appliquons le modèle en faisant varier le nombre d'estimateurs entre 7 valeurs choisis au hasard entre 1 et 650. L'objectif étant de voir l'évolution de la prediction et de trouver une valeur pour laquelle elle est optimal. Nous exécutons RandomForestRegressor sur les valeurs de train, ensuite on fit le modèle et on fait la prédiction sur X_test. On calcul la mean_square_error ainsi que l’accuracy par rapport à Y_test.
