@@ -1,6 +1,6 @@
 # PythonForDataAnalysisZaynebALouiseA
 
-# IN=ntroduction au sujet 
+# Introduction au sujet 
 Ce que l'on appelle abusivement un fichier vidéo est avant tout un conteneur. Le concept est simple, il entrelace en son sein les différents contenus du fichier, à savoir la piste vidéo, la piste audio, et éventuellement les pistes de sous titre.
 
 #### Transcodage
