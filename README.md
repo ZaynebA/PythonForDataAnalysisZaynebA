@@ -1,5 +1,10 @@
 # PythonForDataAnalysisZaynebALouiseA
 
+# IN=ntroduction au sujet 
+Ce que l'on appelle abusivement un fichier vidéo est avant tout un conteneur. Le concept est simple, il entrelace en son sein les différents contenus du fichier, à savoir la piste vidéo, la piste audio, et éventuellement les pistes de sous titre.
+
+#### Transcodage
+Lorsque l'on parle de solutions de transcodage, on parle donc de changer un ou plusieurs des formats présents dans le fichier original. On peut changer les formats de compression pour obtenir un fichier plus petit. Par exemple convertir un DVD (conteneur VOB, vidéo MPEG-2, audio Dolby Digital) en un fichier vidéo (AVI, XviD, MP3). Parfois on peut souhaiter garder un même format vidéo mais réduire la taille des fichiers, par exemple en convertissant un Blu-ray (.m2ts, H.264, DTS-HD) en un fichier lisible sur une tablette (.mp4, H.264, AAC) ou une console de jeux. Même si l'on ne change pas de format vidéo (H.264 de chaque côté), on peut souhaiter recompresser la vidéo, soit pour des questions de taille de fichier (les Blu-ray sont volumineux), de taille d'écran destination (réduire à 1280 par 720 au lieu de 1920 par 1080) ou de spécificité de la machine destination (un iPad par exemple ne peux pas lire tous les « niveaux » de compression H.264, d'où la notion de profil existante à l'intérieur de la norme, voir page suivante).
 
 # Enoncé
 1. Un powerpoint expliquant les tenants et aboutissant du problème, vos réflexions sur la
