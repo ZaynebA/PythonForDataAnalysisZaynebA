@@ -93,22 +93,16 @@ Nous choisissons Mean_square_error(MSE) ainsi que l'accuracy R² comme évaluate
 
 Nous choisissons d'appliquer dans un premier temps un modèle simple de régression, la regression linéaire. 
 Les hyper paramètres que nous aurions pu faire varier sont : 
-""
+
 fit_interceptbool, default=True
-Whether to calculate the intercept for this model. If set to False, no intercept will be used in calculations (i.e. data is expected to be centered).
 
 normalizebool, default=False
-This parameter is ignored when fit_intercept is set to False. If True, the regressors X will be normalized before regression by subtracting the mean and dividing by the l2-norm. If you wish to standardize, please use StandardScaler before calling fit on an estimator with normalize=False.
 
 copy_Xbool, default=True
-If True, X will be copied; else, it may be overwritten.
 
 n_jobsint, default=None
-The number of jobs to use for the computation. This will only provide speedup for n_targets > 1 and sufficient large problems. None means 1 unless in a joblib.parallel_backend context. -1 means using all processors. See Glossary for more details.
 
 positivebool, default=False
-When set to True, forces the coefficients to be positive. This option is only supported for dense arrays.
-""
 
 Cependant, nous n'avons pas jugé nécessaire d'appliquer ces paramètres qui ne nous semblaient pas pertinant dans notre cas.  
 ## Random forest
