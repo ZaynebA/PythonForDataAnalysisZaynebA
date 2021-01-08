@@ -184,4 +184,10 @@ Le fichier **request.py** nous sert à tester l'Api avec un modèle. C'est dans 
 
 Pour lancer l'API nous devons ouvrir 2 terminals : 1 pour lancer l'app.py et le 2ème pour avoir les résultats de prédiction du modèle request.py.
 
+Voici un exemple des résultas que nous obtenons en lancant les 2 terminals sur le jeu de données des 5 lignes de test :
+
+https://user-images.githubusercontent.com/71490248/104065783-a6644980-5200-11eb-8779-2a631044e792.JPG
+
+https://user-images.githubusercontent.com/71490248/104065797-ab28fd80-5200-11eb-910f-79005a4fb6ba.JPG
+
 
