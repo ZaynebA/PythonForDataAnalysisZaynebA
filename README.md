@@ -18,12 +18,12 @@ hyper paramètres, faites une grille de recherche, comparez les résultats de vo
 modèles dans des graphiques : 25%
 3. Transformation du modèle en API Django : 25%
 
-# Description
+# Description du dataset
 
 "youtube_videos.tsv" contient 10 colonnes de caractéristiques fondamentales de vidéo pour 1,6 million de vidéos youtube; Il contient YouTube:
-##### video id, 
-##### duration,
-##### bitrate(total in Kbits), 
+* video id, 
+* duration,
+* bitrate(total in Kbits), 
 ##### bitrate(video bitrate in Kbits), 
 ##### height(in pixle), -
 ##### width(in pixles), 
@@ -73,9 +73,9 @@ Le deuxième ensemble de données peut être utilisé pour construire une prédi
 
 # Modèles
 
-L'objectif de notre projet est de prédire la target : transcoding time utime.
+L'objectif de notre projet est de prédire la target : transcoding time 'Utime'.
 
-Le dataset dispose de colonnes string qui poseront problème pour l’exécution du modèle on décide de créer des colonnes pour chaque string qui ressort 0 si il n’y a pas la valeur et 1 sinon. On sépare ensuite le dataset en deux X qui correspond au features et Y la target à prédire. On sépare ensuite le dataset en train et test en 80% / 20%.
+Le dataset dispose de colonnes string qui poseront problème pour l’exécution du modèle on décide de créer des colonnes pour chaque string qui ressort 0 si il n’y a pas la valeur et 1 sinon (one-hot encoding). On sépare ensuite le dataset en deux X qui correspond au features et Y la target à prédire. On sépare ensuite le dataset en train et test en 80% / 20%.
 
 Notre problème est un problème de regression car la target à prédire n'a pas de valeurs binaires mais des float. Nous décidons de tester plusieurs modèles:
 
