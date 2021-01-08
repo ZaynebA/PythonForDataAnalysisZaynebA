@@ -24,50 +24,62 @@ modèles dans des graphiques : 25%
 * video id, 
 * duration,
 * bitrate(total in Kbits), 
-##### bitrate(video bitrate in Kbits), 
-##### height(in pixle), -
-##### width(in pixles), 
-##### framrate, 
-##### estimated framerate, 
-##### codec, 
-##### category,  
-##### direct video link. 
+* bitrate(video bitrate in Kbits), 
+* height(in pixle), -
+* width(in pixles), 
+* framrate, 
+* estimated framerate, 
+* codec, 
+* category,  
+* direct video link. 
 
 Ce dataset peut être utilisé pour obtenir des informations sur les caractéristiques des vidéos grand public trouvées sur UGC (Youtube).
 
 -----------------------------------------------------------------------------------------------------
 
 "transcoding_mesurment.tsv" contient 20 colonnes qui incluent les caractéristiques vidéo d'entrée et de sortie ainsi que leur transcodage les besoins en temps et en ressources de mémoire lors du transcodage de vidéos formats valides. Le deuxième dataset a été collecté sur la base d'expériences sur un Intel CPU i7-3720QM en sélectionnant au hasard deux lignes du premier ensemble de données et en utilisant ceux-ci comme paramètres d'entrée et de sortie d'une application de transcodage vidéo, ffmpeg 4.
+Pour résumé, le second datset reprend 1099 vidéos du premier dataset. Des test de transcodage on été appliqué à ces vidéos. Ce sont les résultas de ces tests qui sont dans ce dataset.
 
-##### id = Youtube videp id
-##### duration = duration of video
-##### bitrate bitrate(video) = video bitrate (quantité de données transmises par seconde)
-##### height = height of video in pixles
-##### width = width of video in pixles
-##### frame rate = actual video frame rate (image à la sec)
-##### frame rate(est.) = estimated video frame rate
-##### codec = coding standard used for the video
-##### category = YouTube video category
-##### url = direct link to video (has expiration date)
-##### i = number of i frames in the video
-##### p = number of p frames in the video
-##### b = number of b frames in the video
-##### frames = number of frames in video
-##### i_size = total size in byte of i videos
-##### p_size = total size in byte of p videos
-##### b_size = total size in byte of b videos
-##### size = total size of video
-##### o_codec = output codec used for transcoding
-##### o_bitrate = output bitrate used for transcoding
-##### o_framerate = output framerate used for transcoding
-##### o_width = output width in pixel used for transcoding
-##### o_height = output height used in pixel for transcoding
-##### umem = total codec allocated memory for transcoding
-##### utime = total transcoding time for transcoding
+* id = Youtube videp id
+* duration = duration of video
+* bitrate bitrate(video) = video bitrate (quantité de données transmises par seconde)
+* height = height of video in pixles
+* width = width of video in pixles
+* frame rate = actual video frame rate (image à la sec)
+* frame rate(est.) = estimated video frame rate
+* codec = coding standard used for the video
+* category = YouTube video category
+* url = direct link to video (has expiration date)
+* i = number of i frames in the video
+* p = number of p frames in the video
+* b = number of b frames in the video
+* frames = number of frames in video
+* i_size = total size in byte of i videos
+* p_size = total size in byte of p videos
+* b_size = total size in byte of b videos
+* size = total size of video
+* o_codec = output codec used for transcoding
+* o_bitrate = output bitrate used for transcoding
+* o_framerate = output framerate used for transcoding
+* o_width = output width in pixel used for transcoding
+* o_height = output height used in pixel for transcoding
+* umem = total codec allocated memory for transcoding
+* utime = total transcoding time for transcoding
 
 Le deuxième ensemble de données peut être utilisé pour construire une prédiction du temps de transcodage modéliser et montrer l'importance de nos ensembles de données.
 
+-----------------------------------------------------------------------------------------------------
+
 # Visualisation
+
+Dans cette partie visualisation nous avons d'abord visualisé les NA pour en conclure qu'il n'y en avait pas.
+
+Dans un second temps, nous avons fait des observations génarales sur les vidéos Youtube du dataset "youtube_videos.tsv", comme par exemple le top des catégroies les plus regardées.
+
+Ensuite, nous avons fusionné les 2 dataset "youtube_videos.tsv" et "transcoding_mesurment.tsv" pour avoir un dataset avec des informations complètes sur un échantillon de ces vidéos. Plusieurs tests de transcodage ont été fait sur ces vidéos. 
+
+Enfin, nous avons fait des observation sur ce dataset fusionné pour avoir des informations sur les transcadages des vidéos Youtube. Nous avons entre - autre repérer les colonnes qui nous semblaient corrélées avec la target Utime. (plus d'informations dans le PowerPoint)
+
 
 -----------------------------------------------------------------------------------------------------
 
