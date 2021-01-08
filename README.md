@@ -1,5 +1,15 @@
 # PythonForDataAnalysisZaynebALouiseA
 
+# Objectif de l'artcile asscocié à notre dataset 'VIDEO TRANSCODING TIME PREDICTION FOR PROACTIVE LOAD BALANCING'
+
+Le dataset que nous avons : https://archive.ics.uci.edu/ml/datasets/Online+Video+Characteristics+and+Transcoding+Time+Dataset a été utilisé dans le cadre de recherches. Ces chercheurs ont écrit un artcile ***'Video transcoding time prediction for proactive load balancing'*** .L'objectif de cet article est présenté dans son abstract que nous avons traduit en francais :
+
+"Dans cet article, nous présentons une méthode permettant de prédire le temps de transcodage des vidéos en fonction d'un flux vidéo d'entrée et de ses paramètres de transcodage. Le temps de transcodage des vidéos est traité comme une variable aléatoire et est statistiquement prédit à partir d'observations passées. La méthode que nous proposons prédit le temps de transcodage en fonction de plusieurs paramètres des flux vidéo d'entrée et de sortie, et ne nécessite aucune information détaillée sur le codec utilisé. Nous démontrons l'efficacité de notre méthode en comparant les prédictions résultantes avec les temps de transcodage réels sur des flux vidéo non vus. Les résultats de la simulation montrent que notre méthode de prédiction permet un équilibrage de charge des travaux de transcodage nettement meilleur que les méthodes classiques d'équilibrage de charge."
+
+D'après cet abstract, l'objectif premier est de présenter une méthode qui permet de prédire le temps de transcodage des vidéos en fonction d'un flux vidéo d'entrée et de ses paramètres de transcodage. Cette méthode est ensuite testée sur des flux de vidéo non vus.
+
+Dans notre étude, nous allons donc nous pencher sur la prédiction du temps de trenscodage d'un vidéos en fonction entre autre de ses paramètres de transcodage. Nous testerons ensuite nos modèles sur un test set. Puis nous comparerons nos modèles pour trouver la meilleure solution.
+
 # Introduction au sujet 
 Ce que l'on appelle abusivement un fichier vidéo est avant tout un conteneur. Le concept est simple, il entrelace en son sein les différents contenus du fichier, à savoir la piste vidéo, la piste audio, et éventuellement les pistes de sous titre.
 
@@ -148,8 +158,9 @@ Pour conclure cette partie, on peut remarquer que les modèles testés ont en g�
 Les meilleurs modèles pour cette prédiction de la feature Utime, avec les MSE les plus bas et les R2 les plus haut sont : Le Random Forest de base (RF) , et le XGBoost  (XGBoost_IMP ).
 
 Ces très bon résultas peuvent sûrement s'expliquer du fait que l'une des variables qui a participé à la prédiction est la variable Umem qui correspond à la mémoire allouée pour le transcodage. En effet il est logique que plus la mémoire utilisée est grande, plus le temps de transcodage sera long. Pour appuyer cette observation, on voit dans la matrice de confusion que Umem est fortement corrélée à utime.
-
-De plus, souvent lorsque l'on veut prédire un temps de transcodage , la mémoire allouée pour ce transcodage n'est pas connu. De ce fait, si nous avions eu plus de temps, nous aurions pu tester de nouveau les modèles en retirant la feature Umem en entrée.
+De plus,généralement lorsque l'on veut prédire un temps de transcodage , la mémoire allouée pour ce transcodage n'est pas connu.En effet, dans l'article scientifique, les auteurs ont construit leur modèle en prenant des paramètres en entrée. Ces paramètres incluaient : bitrate, framerate, resolution, codec, number of i frames,
+number of p frames, number of b frames, size of i frames, size of p
+frames and size of b frames de le vidéo d'entrée et le bitrate, framerate, resolution and codec désiré de la vidéo sortante. Umem n'est donc pas dans cette liste.  De ce fait, si nous avions eu plus de temps, nous aurions pu tester de nouveau les modèles en retirant la feature Umem en entrée.
 
 Pour finir on peut voir que l'ajout d'hyperparamètres aux modèles ne donne pas forcément de meilleurs résultas. De plus, les modèles Random Forest et XGBoost donnent des résultats aussi bon l'un que l'autre, alors que le modèle XGBoost est un modèle beaucou plus puissant. Ces obeservations peuvent peut-etre s'expliquer par le fait que la prédiction de Utime est un problème simple, accentué par le fait que nous possédons la feature Umem en entrée, comme éxpliqué plus haut.
 
