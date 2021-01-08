@@ -162,7 +162,7 @@ De plus,généralement lorsque l'on veut prédire un temps de transcodage , la m
 number of p frames, number of b frames, size of i frames, size of p
 frames and size of b frames de le vidéo d'entrée et le bitrate, framerate, resolution and codec désiré de la vidéo sortante. Umem n'est donc pas dans cette liste.  De ce fait, si nous avions eu plus de temps, nous aurions pu tester de nouveau les modèles en retirant la feature Umem en entrée.
 
-Pour finir on peut voir que l'ajout d'hyperparamètres aux modèles ne donne pas forcément de meilleurs résultas. De plus, les modèles Random Forest et XGBoost donnent des résultats aussi bon l'un que l'autre, alors que le modèle XGBoost est un modèle beaucou plus puissant. Ces obeservations peuvent peut-etre s'expliquer par le fait que la prédiction de Utime est un problème simple, accentué par le fait que nous possédons la feature Umem en entrée, comme éxpliqué plus haut.
+Pour finir on peut voir que l'ajout d'hyperparamètres aux modèles ne donne pas forcément de meilleurs résultas. De plus, les modèles Random Forest et XGBoost donnent des résultats aussi bon l'un que l'autre, alors que le modèle XGBoost est un modèle beaucoup plus puissant. Ces observations peuvent peut-être s'éxpliquer par le fait que la prédiction de Utime est un problème simple, accentué par le fait que nous possédons la feature Umem en entrée, comme éxpliqué plus haut.
 
 # API 
 
