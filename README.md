@@ -114,6 +114,7 @@ Nous choisissons Mean_square_error(MSE) ainsi que l'accuracy R² comme évaluate
 ## Regression Linéaire
 
 Nous choisissons d'appliquer dans un premier temps un modèle simple de régression, la regression linéaire. 
+Nous n'avons pas jugé nécessaire d'appliquer ces paramètres qui ne nous semblaient pas pertinant dans notre cas.  
 
 ## Random forest
 
@@ -149,7 +150,12 @@ Le modèle XGBOOST s'applique de la même manière que random forest. On choisi 
 # Comparaison des modèles 
 
 
-<img src="C:\Users\louis\Documents\PY_for_data_analysis\redm.JPG">
+![136423356_461424774853521_7408076743741854134_n](https://user-images.githubusercontent.com/57664959/104026917-ec9cb700-51c6-11eb-86f6-a8868ad7afe4.png)
+
+
+![137244482_433291444463529_5182809428197153166_n](https://user-images.githubusercontent.com/57664959/104026948-f8887900-51c6-11eb-92df-880d1493f263.png)
+
+
 
 # Conclusion des modèles 
 Pour conclure cette partie, on peut remarquer que les modèles testés ont en général plutôt bien, voir très bien fonctionné dans la prédiction de la feature Utime.
