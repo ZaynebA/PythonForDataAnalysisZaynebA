@@ -107,7 +107,7 @@ Notre problème est un problème de regression car la target à prédire n'a pas
 #### KNN
 #### XGBOOST
 
-Nous choisissons Mean_square_error(MSE) ainsi que l'accuracy R² comme évaluateur pour tous nos modèles. Un MSE parfait vaut 0 et un R² parfait vaut 1.
+Nous choisissons Mean_square_error(MSE) ainsi que l'accuracy R² comme évaluateurs pour tous nos modèles. Un MSE parfait vaut 0 et un R² parfait vaut 1.
 
 -----------------------------------------------------------------------------------------------------
 
@@ -145,7 +145,7 @@ Mais ce modèle reste moins performant que les précédents modèles.Le temps d'
 
 ## XGBOOST
 
-Le modèle XGBOOST s'applique de la même manière que random forest. On choisi donc pour estimateurs les mêmes que ceux du random forest afin de pouvoir les comparer plus simplement. Ici aussi nous faisont varier le modèle avec les hyper paramètre (ici gamma=10). Ce modèle a des performances très proche avec et sans hyper paramètre même si on remarque qu'il est très légèrement meilleur avec.
+Le modèle XGBOOST s'applique de la même manière que random forest. On choisi donc pour estimateurs les mêmes que ceux du random forest afin de pouvoir les comparer plus simplement. Ici aussi nous faisont varier le modèle avec les hyper paramètres (ici gamma=10). Ce modèle a des performances très proche avec et sans hyper paramètre même si on remarque qu'il est très légèrement meilleur avec.
 
 # Comparaison des modèles 
 
@@ -162,7 +162,7 @@ De plus,généralement lorsque l'on veut prédire un temps de transcodage , la m
 number of p frames, number of b frames, size of i frames, size of p
 frames and size of b frames de le vidéo d'entrée et le bitrate, framerate, resolution and codec désiré de la vidéo sortante. Umem n'est donc pas dans cette liste.  De ce fait, si nous avions eu plus de temps, nous aurions pu tester de nouveau les modèles en retirant la feature Umem en entrée.
 
-Pour finir on peut voir que l'ajout d'hyperparamètres aux modèles ne donne pas forcément de meilleurs résultas. De plus, les modèles Random Forest et XGBoost donnent des résultats aussi bon l'un que l'autre, alors que le modèle XGBoost est un modèle beaucoup plus puissant. Ces observations peuvent peut-être s'éxpliquer par le fait que la prédiction de Utime est un problème simple, accentué par le fait que nous possédons la feature Umem en entrée, comme éxpliqué plus haut.
+Pour finir on peut voir que l'ajout d'hyperparamètres aux modèles ne donne pas forcément de meilleurs résultas. De plus, les modèles Random Forest et XGBoost donnent des résultats aussi bon l'un que l'autre, alors que le modèle XGBoost est un modèle beaucou plus puissant. Ces obeservations peuvent peut-etre s'expliquer par le fait que la prédiction de Utime est un problème simple, accentué par le fait que nous possédons la feature Umem en entrée, comme éxpliqué plus haut.
 
 # API 
 
