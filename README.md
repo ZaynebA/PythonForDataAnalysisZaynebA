@@ -150,10 +150,10 @@ Le modèle XGBOOST s'applique de la même manière que random forest. On choisi 
 # Comparaison des modèles 
 
 
-![136423356_461424774853521_7408076743741854134_n](https://user-images.githubusercontent.com/57664959/104026917-ec9cb700-51c6-11eb-86f6-a8868ad7afe4.png)
-
 
 ![137244482_433291444463529_5182809428197153166_n](https://user-images.githubusercontent.com/57664959/104026948-f8887900-51c6-11eb-92df-880d1493f263.png)
+
+![136423356_461424774853521_7408076743741854134_n](https://user-images.githubusercontent.com/57664959/104026917-ec9cb700-51c6-11eb-86f6-a8868ad7afe4.png)
 
 
 
