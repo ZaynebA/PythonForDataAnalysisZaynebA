@@ -129,13 +129,13 @@ On veut voir avec cette grille de rechercher différents paramètres possibles p
 
 ## KNN
 
-On choisi d’appliquer le modèle K Neighbors aux données. On fait varier le nombre de voisin de 1 à 10. Ici encore nous executons le modèle sans puis avec hyper paramètre afin de constater une évolution. On calcul l’accuracy R2 et la mean_square_error pour chaque essaie. Les valeurs de MSE sont assez élevés par rapport à celui du random forest.Le R² a une valeur objectivement haute, mais moins que celle du Random Forest. 
+On choisi d’appliquer le modèle K Neighbors aux données. On fait varier le nombre de voisin de 1 à 10. Ici encore nous executons le modèle sans puis avec hyper paramètre afin de constater une évolution. On calcul l’accuracy R2 et la mean_square_error pour chaque essaie. Les valeurs de MSE sont assez élevés par rapport à celui du random forest.Le R² a une valeur objectivement haute (max : 0.92) , mais moins que celle du Random Forest. 
 Ensuite en y ajoutant des hyperparamètres (ici leaf_size=30,n_jobs=-1), nous constatons une baisse des performances lorsque l'on regarde le R2 et le MSE. On en conlue que le KNN simple est une meilleur solution.
 Mais ce modèle reste moins performant que les précédents modèles.Le temps d'éxécution, lui, est rapide. 
 
 ## XGBOOST
 
-Le modèle XGBOOST s'applique de la même manière que random forest. On choisi donc pour estimateurs les mêmes que ceux du random forest afin de pouvoir les comparer plus simplement. Ici aussi nous faisont varier le modèle avec les hyper paramètre (ici gamma=10). Ce modèle a des performances très proche avec et sans hyper paramètre  même si on remarque qu'il est très légèrement meilleur avec.
+Le modèle XGBOOST s'applique de la même manière que random forest. On choisi donc pour estimateurs les mêmes que ceux du random forest afin de pouvoir les comparer plus simplement. Ici aussi nous faisont varier le modèle avec les hyper paramètre (ici gamma=10). Ce modèle a des performances très proche avec et sans hyper paramètre même si on remarque qu'il est très légèrement meilleur avec.
 
 # Comparaison des modèles 
 
