@@ -8,7 +8,7 @@ Le dataset que nous avons : https://archive.ics.uci.edu/ml/datasets/Online+Video
 
 D'après cet abstract, l'objectif premier est de présenter une méthode qui permet de prédire le temps de transcodage des vidéos en fonction d'un flux vidéo d'entrée et de ses paramètres de transcodage. Cette méthode est ensuite testée sur des flux de vidéo non vus.
 
-Dans notre étude, nous allons donc nous pencher sur la prédiction du temps de trenscodage d'un vidéos en fonction entre autre de ses paramètres de transcodage. Nous testerons ensuite nos modèles sur un test set. Puis nous comparerons nos modèles pour trouver la meilleure solution.
+Dans notre étude, nous allons donc nous pencher sur la prédiction du temps de transcodage d'une vidéo en fonction, entre autre, de ses paramètres de transcodage. Nous testerons ensuite nos modèles sur un test set. Puis nous comparerons nos modèles pour trouver la meilleure solution.
 
 # Introduction au sujet 
 Ce que l'on appelle abusivement un fichier vidéo est avant tout un conteneur. Le concept est simple, il entrelace en son sein les différents contenus du fichier, à savoir la piste vidéo, la piste audio, et éventuellement les pistes de sous titre.
