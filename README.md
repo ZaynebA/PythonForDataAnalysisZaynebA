@@ -114,7 +114,6 @@ Nous choisissons Mean_square_error(MSE) ainsi que l'accuracy R² comme évaluate
 ## Regression Linéaire
 
 Nous choisissons d'appliquer dans un premier temps un modèle simple de régression, la regression linéaire. 
-Nous n'avons pas jugé nécessaire d'appliquer ces paramètres qui ne nous semblaient pas pertinant dans notre cas.  
 
 ## Random forest
 
