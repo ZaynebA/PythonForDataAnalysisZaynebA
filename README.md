@@ -186,7 +186,7 @@ Pour lancer l'API nous devons ouvrir 2 terminals : 1 pour lancer l'app.py et le 
 
 Voici un exemple des résultas que nous obtenons en lancant les 2 terminals sur le jeu de données des 5 lignes de test :
 
-![redm](https://user-images.githubusercontent.com/71490248/104068238-db729b00-5204-11eb-9a02-e64c585eb130.JPG)
+![app](https://user-images.githubusercontent.com/71490248/104068483-4ae88a80-5205-11eb-9751-3e4e8c4ac71b.JPG)
 
 ![requetst](https://user-images.githubusercontent.com/71490248/104068241-dc0b3180-5204-11eb-8e96-a2329291725b.JPG)
 
