@@ -173,4 +173,15 @@ Pour finir on peut voir que l'ajout d'hyperparamètres aux modèles ne donne pas
 Pour l'APi nous avons choisi de la coder en python + Flask.
 Nous avons crée 2 fichiers : app.py et request.py.
 
-Le fichier request.py nous sert à tester l'Api avec un modèle. Le modèle que nous avons choisi de tester avec l'API est le XGBoost car c'est l'un des deux modèles qui fonctionnait le mieux pour notre problème de prédiction.
+Le modèle que nous avons choisi de tester avec l'API est le XGBoost car c'est l'un des deux modèles qui fonctionnait le mieux pour notre problème de prédiction.
+
+L'API que nous avons faite se compose de 2 fichiers.
+
+L'**app.py**qui sert à charger le modèle enregistré sous format pickle (dans le dossier models) et exécuter celui-ci sur le petite jeu de données test choisi.
+Pour se faire nous avons inséré 5 lignes du X_test de notre dataset dans un tableau puis nous avons transformé ce tableau en Dataframe avant de les passer en entré du modèle.
+
+Le fichier **request.py** nous sert à tester l'Api avec un modèle. C'est dans ce fichier que nous insérons les données à tester pour ensuite les passer à l'app.py. Les données à tester ont été tiré du X_train du dataset. Nous y avons pris 5 lignes de manière aléàtoire et les avons mis dans un tableau.
+
+Pour lancer l'API nous devons ouvrir 2 terminals : 1 pour lancer l'app.py et le 2ème pour avoir les résultats de prédiction du modèle request.py.
+
+
